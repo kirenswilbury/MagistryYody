@@ -1,0 +1,22 @@
+<html>
+<head>Вход</head>
+<body>
+	<form name="myForm" action="/Users/kirens/Downloads/results.html" onsubmit="return validateForm()" method="post">
+		<input name = "fname" type = "text">
+		<input type = "submit" value = "Submit">
+	</form>
+	<script>
+		function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  else if(x != "Password") {
+  	alert("Wrong password");
+  	return false;
+  }
+}
+</script>
+</body>
+</html>
